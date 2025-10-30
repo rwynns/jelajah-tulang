@@ -33,40 +33,40 @@ export default function HookQuiz() {
             {/* First Row: Tengkorak, Cervical, Thoracal */}
             <div className="flex justify-center gap-10">
               <button onClick={() => playBoneSound("tengkorak")} className="hover:scale-110 hover:opacity-70 transition-all duration-300 cursor-pointer">
-                <Image src="/images/hookQuizImages/tengkorak-dan-tulang-belakang/tengkorak.png" alt="Tengkorak" width={180} height={180} className="w-40 h-40 object-contain" priority />
+                <Image src="/images/hookQuizImages/tengkorak-dan-tulang-belakang/tengkorak.png" alt="Tengkorak" width={180} height={180} className="w-40 h-40 object-contain" placeholder="blur" blurDataURL={PURPLE_BLUR_DATA_URL} />
               </button>
               <button onClick={() => playBoneSound("cervical")} className="hover:scale-110 hover:opacity-70 transition-all duration-300 cursor-pointer">
-                <Image src="/images/hookQuizImages/tengkorak-dan-tulang-belakang/cervical.png" alt="Cervical" width={180} height={180} className="w-40 h-40 object-contain" priority />
+                <Image src="/images/hookQuizImages/tengkorak-dan-tulang-belakang/cervical.png" alt="Cervical" width={180} height={180} className="w-40 h-40 object-contain" placeholder="blur" blurDataURL={PURPLE_BLUR_DATA_URL} />
               </button>
               <button onClick={() => playBoneSound("thoracal")} className="hover:scale-110 hover:opacity-70 transition-all duration-300 cursor-pointer">
-                <Image src="/images/hookQuizImages/tengkorak-dan-tulang-belakang/thoracal.png" alt="Thoracal" width={180} height={180} className="w-40 h-40 object-contain" priority />
+                <Image src="/images/hookQuizImages/tengkorak-dan-tulang-belakang/thoracal.png" alt="Thoracal" width={180} height={180} className="w-40 h-40 object-contain" placeholder="blur" blurDataURL={PURPLE_BLUR_DATA_URL} />
               </button>
             </div>
 
             {/* Second Row: Lumbal, Sacrum, Coccxy */}
             <div className="flex justify-center pt-20 gap-10">
               <button onClick={() => playBoneSound("lumbal")} className="hover:scale-110 hover:opacity-70 transition-all duration-300 cursor-pointer">
-                <Image src="/images/hookQuizImages/tengkorak-dan-tulang-belakang/lumbal.png" alt="Lumbal" width={180} height={180} className="w-40 h-40 object-contain" priority />
+                <Image src="/images/hookQuizImages/tengkorak-dan-tulang-belakang/lumbal.png" alt="Lumbal" width={180} height={180} className="w-40 h-40 object-contain" placeholder="blur" blurDataURL={PURPLE_BLUR_DATA_URL} />
               </button>
               <button onClick={() => playBoneSound("sacrum")} className="hover:scale-110 hover:opacity-70 transition-all duration-300 cursor-pointer">
-                <Image src="/images/hookQuizImages/tengkorak-dan-tulang-belakang/sacrum.png" alt="Sacrum" width={180} height={180} className="w-40 h-40 object-contain" priority />
+                <Image src="/images/hookQuizImages/tengkorak-dan-tulang-belakang/sacrum.png" alt="Sacrum" width={180} height={180} className="w-40 h-40 object-contain" placeholder="blur" blurDataURL={PURPLE_BLUR_DATA_URL} />
               </button>
               <button onClick={() => playBoneSound("coccxy")} className="hover:scale-110 hover:opacity-70 transition-all duration-300 cursor-pointer">
-                <Image src="/images/hookQuizImages/tengkorak-dan-tulang-belakang/coccxy.png" alt="Coccxy" width={180} height={180} className="w-40 h-40 object-contain" priority />
+                <Image src="/images/hookQuizImages/tengkorak-dan-tulang-belakang/coccxy.png" alt="Coccxy" width={180} height={180} className="w-40 h-40 object-contain" placeholder="blur" blurDataURL={PURPLE_BLUR_DATA_URL} />
               </button>
             </div>
           </div>
 
           {/* Right Side - Vertebrae (Spine) */}
           <button onClick={() => playBoneSound("vertebrae")} className="hover:scale-110 hover:opacity-70 transition-all duration-300 cursor-pointer">
-            <Image src="/images/hookQuizImages/tengkorak-dan-tulang-belakang/vertebrae.png" alt="Vertebrae" width={240} height={400} className="w-60 h-[400px] object-contain" priority />
+            <Image src="/images/hookQuizImages/tengkorak-dan-tulang-belakang/vertebrae.png" alt="Vertebrae" width={240} height={400} className="w-60 h-[400px] object-contain" placeholder="blur" blurDataURL={PURPLE_BLUR_DATA_URL} />
           </button>
         </div>
 
         <Link href="/tengkorak-dan-tulang-belakang/quiz" className="absolute right-10 z-10 w-auto hover:opacity-70 transition-opacity">
           <div className="flex flex-col items-center">
             <p className="text-2xl font-medium ml-1 mb-1 text-white">Next</p>
-            <Image src="/images/next_button.png" alt="Next Button" width={100} height={100} priority />
+            <Image src="/images/next_button.png" alt="Next Button" width={100} height={100} placeholder="blur" blurDataURL={PURPLE_BLUR_DATA_URL} />
           </div>
         </Link>
       </div>

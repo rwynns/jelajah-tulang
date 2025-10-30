@@ -26,7 +26,7 @@ export default function EkstremitasBawah() {
       <Link href="/pilih_kelas" className="absolute bottom-20 left-10 z-10 w-auto hover:opacity-70 transition-opacity">
         <div className="flex flex-col items-center">
           <p className="text-2xl font-medium ml-1 mb-1 text-white">Back</p>
-          <Image src="/images/back_button.png" alt="Back Button" width={100} height={100} priority />
+          <Image src="/images/back_button.png" alt="Back Button" width={100} height={100} placeholder="blur" blurDataURL={PURPLE_BLUR_DATA_URL} />
         </div>
       </Link>
 
@@ -34,7 +34,7 @@ export default function EkstremitasBawah() {
       <Link href="/ekstremitas-bawah/hookquiz" className="absolute right-10 z-10 w-auto hover:opacity-70 transition-opacity">
         <div className="flex flex-col items-center">
           <p className="text-2xl font-medium ml-1 mb-1 text-white">Next</p>
-          <Image src="/images/next_button.png" alt="Next Button" width={100} height={100} priority />
+          <Image src="/images/next_button.png" alt="Next Button" width={100} height={100} placeholder="blur" blurDataURL={PURPLE_BLUR_DATA_URL} />
         </div>
       </Link>
     </div>

@@ -33,7 +33,16 @@ export default function PilihKelas() {
       <div className="relative z-10 flex justify-center pt-40 gap-5">
         {books.map((book, i) => (
           <Link href={`/${book.slug}`} key={i} className="hover:opacity-70 active:opacity-70 transition-opacity">
-            <Image src={`/images/${book.thumbnail}`} alt={book.title} width={320} height={320} className="w-80 h-80" priority />
+            <Image
+              src={`/images/${book.thumbnail}`}
+              alt={book.title}
+              width={320}
+              height={320}
+              className="w-80 h-80"
+              placeholder="blur"
+              blurDataURL={PURPLE_BLUR_DATA_URL}
+              sizes="(max-width: 768px) 100vw, 320px"
+            />
           </Link>
         ))}
       </div>

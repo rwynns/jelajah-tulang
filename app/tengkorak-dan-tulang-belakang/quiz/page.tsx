@@ -133,7 +133,7 @@ export default function QuizPage() {
 
           {/* Emoji based on score */}
           <div className="mb-8">
-            <Image src={emojiImage} alt={`Score ${score}`} width={200} height={200} className="object-contain" priority />
+            <Image src={emojiImage} alt={`Score ${score}`} width={200} height={200} className="object-contain" placeholder="blur" blurDataURL={PURPLE_BLUR_DATA_URL} />
           </div>
 
           <p className="text-5xl font-bold text-white mb-4">
@@ -171,7 +171,7 @@ export default function QuizPage() {
             <div className="flex items-center justify-center gap-16 w-full">
               {/* Question Image on the left */}
               <div className="shrink-0">
-                <Image src={question.image!} alt="Question Image" width={350} height={350} className="object-contain" priority />
+                <Image src={question.image!} alt="Question Image" width={350} height={350} className="object-contain" placeholder="blur" blurDataURL={PURPLE_BLUR_DATA_URL} />
               </div>
 
               {/* Answers on the right */}
@@ -200,7 +200,7 @@ export default function QuizPage() {
                 <div className="flex gap-8 justify-center">
                   {question.answers.map((answer) => (
                     <button key={answer.id} onClick={() => handleAnswerClick(answer.id)} className={`p-6 transition-all duration-300 hover:scale-115  ${selectedAnswer === answer.id ? "scale-115" : ""}`}>
-                      <Image src={answer.image!} alt={`Answer ${answer.id}`} width={280} height={280} className="object-contain" priority />
+                      <Image src={answer.image!} alt={`Answer ${answer.id}`} width={280} height={280} className="object-contain" placeholder="blur" blurDataURL={PURPLE_BLUR_DATA_URL} />
                     </button>
                   ))}
                 </div>
@@ -228,7 +228,7 @@ export default function QuizPage() {
         <button onClick={handleNextClick} className="absolute bottom-20 right-20 z-10 hover:opacity-70 transition-opacity">
           <div className="flex flex-col items-center">
             <p className="text-3xl font-bold mb-2 text-white drop-shadow-lg">Next</p>
-            <Image src="/images/next_button.png" alt="Next Button" width={120} height={120} priority />
+            <Image src="/images/next_button.png" alt="Next Button" width={120} height={120} placeholder="blur" blurDataURL={PURPLE_BLUR_DATA_URL} />
           </div>
         </button>
       )}

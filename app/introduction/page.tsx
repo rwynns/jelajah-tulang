@@ -8,7 +8,7 @@ import { PURPLE_BLUR_DATA_URL } from "@/lib/blur-placeholder";
 export default function Introduction() {
   return (
     <div className="relative flex items-center justify-center w-full h-screen">
-      <audio id="backsong" preload="auto" loop autoPlay src="/audio/backsong_introduction.mp3"></audio>
+      <audio id="backsong" preload="metadata" loop autoPlay src="/audio/backsong_introduction.mp3"></audio>
       <Image src="/images/background_introduction.png" alt="Background Introduction" fill className="object-cover object-center" priority quality={75} sizes="100vw" placeholder="blur" blurDataURL={PURPLE_BLUR_DATA_URL} />
 
       <div className="w-[35%] absolute top-[30%] right-[4%] z-10">
@@ -33,7 +33,7 @@ export default function Introduction() {
       <Link href="/pilih_kelas" className="absolute bottom-20 right-10 z-10 w-auto hover:opacity-70 transition-opacity">
         <div className="flex flex-col items-center">
           <p className="text-2xl font-medium ml-1 mb-1 text-[#6836B4]">Next</p>
-          <Image src="/images/next_button.png" alt="Next Button" width={100} height={100} priority />
+          <Image src="/images/next_button.png" alt="Next Button" width={100} height={100} placeholder="blur" blurDataURL={PURPLE_BLUR_DATA_URL} />
         </div>
       </Link>
     </div>

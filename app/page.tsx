@@ -10,7 +10,7 @@ export default function Home() {
       <Image src="/images/Background Home.png" alt="Background Home" fill className="object-cover object-center" priority quality={75} sizes="100vw" placeholder="blur" blurDataURL={PURPLE_BLUR_DATA_URL} />
 
       <Link href="/introduction" className="absolute top-[75%] left-[34%] -translate-x-1/2 -translate-y-1/2 hover:opacity-70 active:opacity-70 transition-opacity cursor-pointer">
-        <Image src="/images/button_start.png" alt="Start Button" width={150} height={150} priority />
+        <Image src="/images/button_start.png" alt="Start Button" width={150} height={150} placeholder="blur" blurDataURL={PURPLE_BLUR_DATA_URL} />
       </Link>
     </div>
   );
